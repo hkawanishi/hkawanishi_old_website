@@ -1,0 +1,19 @@
+---
+layout: post
+title:  "Week 2"
+date:   2015-11-15 10:07:48 +0000
+categories: week_2
+---
+I had my first mentor meeting.  We first talked about our background and tried to get to know each other.  We also discussed what should be expected in each mentor session, and I mentioned my goal (getting a job as a web developer!) and what I wanted to do during the programming camp. The meeting went well.  My mentor seems to have very logical mind and seems to have lots of experience with Ruby on Rails.  I am looking forward to working with him. 
+
+I finished [Nomster][nomster] on Tuesday.  There was still lots of stuff I didn't completely understand but I was very happy I finished my second project!  That night, my brain was super stimulated and I woke up at 3:30 AM and couldn't go back to sleep so I decided to watch OOP videos.  After watching all of the videos, I coded a small Ruby program that created a deck of cards.  It didn't take long to complete but it also wasn't very elegant...  I should discuss my approach with my mentor to see if it was correct.
+ 
+I got feedback about my Nomster.  It turned out I had a bug in my code.  In Nomster, a user can create, edit, and delete a place entry (in my case, a hotel) and create a comment about the place.  Once the place (a hotel) is created, other users can also comment about the place.  Anybody can comment but the only person who can delete the place is the person who created the place.  In addition, each user has a profile page which displays a list of the  information about the places created and the comments created.  What happened was that when a user who created a place deleted the place, the data for the comments still existed.  So when the user profile was displayed, the program tried to find the comments which linked to a place that no longer existed, so an error occurred.  My evaluator gave me a hint to solve this problem; he said I should google “dependent destroy”.  Luckily, it didn't take long to solve the problem!
+
+Another assignment I had this week was to study few chapters about algorithms and data structures from the FirehoseProject website and create a small program that builds data using array.  I had to re-watch the videos about OOP but it didn't take too long to finish it.  
+
+I also had to do a quiz assignment. It was called a quiz but it was actually an assignment to create a static web page from a scratch.  When I started, I thought it wouldn't take too long, but it took longer than I thought it would.  I wanted to create an app called “Route 66 Virtual Walk” so I decided to create a static front page for that for the assignment.  “Route 66 Virtual Walk” will be an app where users can store their daily steps and see how far they have walked down a virtual map of route 66.  Once I started this, I realized that I severely lacked css skills.  I wanted to put some text in the middle of a large picture but I had a hard time doing it.  The hardest part was to make it compatible for different devices.  I positioned text nicely in the center of the picture, but when I tried to display it on my iPhone, the text moved below the picture.  I spent lots of time and had to Google a lot to solve the problem.  In the end, I made it work but it took a long time to finish the one page.  
+
+After finishing my quiz assignment, I had some free time over the weekend, so I decided to study Ruby again.  I studied some Ruby before I enrolled in the course, but I felt that I needed to review more.  I went through Codecademy and Ruby Monk Primer again from the very beginning.  I also tried all of the recommended CodeWar problems in Ruby which were fun.  
+
+[nomster]: https://nomster-by-hiromi.herokuapp.com/

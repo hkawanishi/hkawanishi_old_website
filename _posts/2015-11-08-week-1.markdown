@@ -1,0 +1,15 @@
+---
+layout: post
+title:  "Week 1"
+date:   2015-11-08 18:07:48 +0000
+categories: week1
+---
+I was very excited about my first week of a camp.  My on-boarding meeting was 11 AM on the first day, but I was so excited I started doing my first project before the meeting.The first project was called [Splurty][splurty], which is a website that generates random Anime quotes.  It took me about two and half days to finish the app.  Since I went through several chapters of the “Ruby on Rails Tutorial” (by Michael Hartl) the previous week, the concept and the materials to create Splurty were somewhat familiar, and that helped.  However, I was still trying to figure out what MVC was.  After I finished Splurty, I got access to videos explaining MVC.  Those videos were great.  One of the founders, Ken, explained the concept pretty well.  I think instructional videos were great for me, because sometimes I couldn't grasp a concept and I found myself rewinding and rewatching the same thing a couple of times.  
+
+I started my second project called [Nomster][nomster].  Nomster is a Yelp clone app and it integrates Google Map, user authentication, comment functionality, and email notification.  There was a lot of information but I was still pretty confident and excited. 
+
+[splurty]: https://splurtybyhiromi.herokuapp.com/
+[nomster]: https://nomster-by-hiromi.herokuapp.com/
+
+
+

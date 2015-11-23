@@ -1,6 +1,6 @@
 # Site wide configuration
 
-title:            Site Title
+title:            Hiromi's Programming Blog
 locale:           en_US
 url:
 
@@ -26,9 +26,9 @@ kramdown:
 
 # Site owner
 owner:
-  name: Your Name
-  avatar: bio-photo.jpg
-  bio: "Describe your self."
+  name: Hiromi Kawanishi
+  avatar: my_avatar.png
+  bio: "Former Computer Aided Engineer at an automobile company.  Currently studying to become a web developer at the Firehose Project.  Just moved from Michigan to Reno, NV early this year."
   email:
   disqus-shortname:
   twitter: #username
