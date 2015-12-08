@@ -4,7 +4,7 @@ title:  "Week 5 adding validations to lessons and sections"
 date:   2015-12-06 11:07:48 +0000
 categories: Flixter, validations
 ---
-I was working on my Flixter, a Udemy clone, I decided to add input validation code for lessons and sections.  I wanted to make it so when a teacher wanted to create a lesson or a section, it would warn if there was no title or subtitle.  There was an instruction on how to add validations to create a course so I thought it was easy.  
+While I was working on my Flixter, a Udemy clone, I decided to add input validation code for lessons and sections.  I wanted to make it so when a teacher wanted to create a lesson or a section, it would warn if there was no title or subtitle.  There were instructions on how to add validations to create a course so I thought it was easy.  
 
 In Flixter's model/course.rb, I saw the following three lines:
 
@@ -35,7 +35,7 @@ end
 
 {% endhighlight %} 
 
-So, it looked like I could add similar code to my lesson and section files.  *HOWEVER*, it wasn't as easy as I thought.  After moving lesson and section forms into modal, `def new` method was deleted from controller files so it wouldn't render correctly when lesson/section entries were invalid (see above code).  I asked about the solution of this problem to Ken but he said it was very challenging to do what I wanted to do.  However, he suggested a workaround.  He said I could "create a 'new' form that's actually only used on validation errors."  I took his advice and created an error page.  I am describing here what I did.  I am only going to write how I changed the lesson files but the section files were done in the same way.
+So, it looked like I could add similar code to my lesson and section files.  However, it wasn't as easy as I thought.  After moving my lesson and section forms into modal, the `def new` method was deleted from controller files so it wouldn't render correctly when lesson/section entries were invalid (see above code).  I talked about the problem with Ken but he said it was very challenging to do what I wanted to do.  However, he suggested a workaround.  He said I could "create a 'new' form that's actually only used on validation errors."  I took his advice and created an error page.  I am describing here what I did.  I am only going to write how I changed the lesson files but the section files were done in the same way.
 
 In my model/lesson.rb, I added:
 
@@ -46,7 +46,7 @@ validates :subtitle, :presence => true
 
 {% endhighlight %} 
 
-and then, in config/routes.rb, I changed it to add :new for lesson.
+and then, in config/routes.rb, I changed a line, adding :new for lesson.
 
 {% highlight ruby %}
 resources :courses, :only => [:index, :show] do
@@ -82,7 +82,7 @@ end
 
 {% endhighlight %} 
 
-And, I created new.html.erb file under views/instructor/lessons/
+And, I created the new.html.erb file under views/instructor/lessons/
 
 {% highlight html %}
 {% raw %}
@@ -97,7 +97,7 @@ And, I created new.html.erb file under views/instructor/lessons/
 {% endraw %}
 {% endhighlight %}
 
-If a teacher did not enter a tilte or a subtitle of a lesson, this page was displayed along with a link to go back to the course page.  I also made a minor change to master.css.scss to make the words "title" and "subtitle" in red color.
+If a teacher doesn't enter a title or a subtitle of a lesson, this page is displayed along with a link to go back to the course page.  I also made a minor change to master.css.scss to make the words "title" and "subtitle" appear in red color.
 
 {% highlight css %}
 .entryvalidation {
@@ -111,7 +111,7 @@ The error message page I made is shown below.
   <figcaption>The error message page (new.html.erb)</figcaption>
 </figure>
 
-Someday when I become much better at web development, I want to be able to add better validation code, not work-around.  But for now this would do.
+Someday when I become much better at web development, I want to be able to add better validation code and avoid work-arounds.  But for now, this will do.
 
 
 
