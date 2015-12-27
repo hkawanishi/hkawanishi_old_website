@@ -2,7 +2,7 @@
 layout: post
 title:  "Week 5 adventure with Capybara"
 date:   2015-12-06 16:07:48 +0000
-categories: TDD, Capybara
+categories: TDD Capybara
 ---
 When I was talking to my mentor earlier this week, I asked some questions about testing code.  I asked about what sort of testing I could be done in model and in controller for my Flixter project.  I also asked about integration testing, and he suggested that I should do some research about it and write about what I learned.  
 

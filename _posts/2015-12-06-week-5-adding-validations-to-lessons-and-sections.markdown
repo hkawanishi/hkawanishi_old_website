@@ -2,7 +2,7 @@
 layout: post
 title:  "Week 5 adding validations to lessons and sections"
 date:   2015-12-06 11:07:48 +0000
-categories: Flixter, validations
+categories: Flixter validations
 ---
 While I was working on my Flixter, a Udemy clone, I decided to add input validation code for lessons and sections.  I wanted to make it so when a teacher wanted to create a lesson or a section, it would warn if there was no title or subtitle.  There were instructions on how to add validations to create a course so I thought it was easy.  
 
