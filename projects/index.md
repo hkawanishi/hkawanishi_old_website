@@ -5,8 +5,8 @@ tags: [projects]
 modified: 2016-01-213T20:53:07.573882-04:00
 comments: false
 image:
-  feature: black-and-white-cat2.jpg
-  credit: user20672
+  feature: cat_lie_down.jpg
+  credit: Ana_J
   creditlink: https://pixabay.com/
 ---
 
